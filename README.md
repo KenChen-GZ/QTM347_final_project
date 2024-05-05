@@ -1,4 +1,4 @@
----POLISH COMPANY BANKRUPTCY PREDICTION
+POLISH COMPANY BANKRUPTCY PREDICTION
 
 INTRODUCTION
 Background: Research on predicting bankruptcy has been ongoing for nearly a century, highlighting its importance in economics.
@@ -21,8 +21,7 @@ DATA SETUP
 4.Feature Variables A1-A64 (Numerical)
 
 METHOD
-Logistic Regression   ：
-Subset Selection Cross-validation
+Logistic Regression：Subset Selection Cross-validation
 <img width="369" alt="截屏2024-05-04 下午9 54 55" src="https://github.com/KenChen-GZ/QTM347_final_project/assets/123331887/87b439da-59d6-4916-9de7-884344bdb267">
 
 <img width="356" alt="截屏2024-05-04 下午9 55 05" src="https://github.com/KenChen-GZ/QTM347_final_project/assets/123331887/05a4c2bc-6b95-4c53-9e04-830061a2b98f">

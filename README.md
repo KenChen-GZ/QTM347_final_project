@@ -1,8 +1,8 @@
-## Polish Company Bankruptcy Prediction
-### Abstract
+# Polish Company Bankruptcy Prediction
+## Abstract
 This project employs machine learning techniques to predict whether a company will bankrupt or not based on a set of financial indicators. By analyzing the Polish Companies Bankruptcy dataset from the UCI Machine Learning Repository, our goal is to develop a model that can accruate predict the bankruptcy of a company in making informed decisions.
 
-### Introduction
+## Introduction
 
 **Background:**  For nearly a century, economists have been engaged in developing methods to predict corporate bankruptcies, underscoring its critical importance for stakeholders. This research aids investors, creditors, and regulatory bodies in making informed decisions and managing risk effectively.
 
@@ -12,7 +12,7 @@ This project employs machine learning techniques to predict whether a company wi
 
 **Project Focus:** This project seeks to apply cutting-edge machine learning algorithms learned in academic coursework to real-world data. By doing so, it aims to not only validate the effectiveness of these methods but also explore their potential to outperform traditional models in predicting company bankruptcies. The project will use historical data from Polish companies, combining traditional financial ratios with newer, non-linear modeling techniques to provide a comprehensive assessment of bankruptcy risk.
 
-### Source
+## Source
 
 **Dataset:** Polish Companies Bankruptcy
 - **Source:** UCI Machine Learning Repository
@@ -20,14 +20,14 @@ This project employs machine learning techniques to predict whether a company wi
 - **Time Frame:** Bankrupt companies from 2000 to 2012, operating companies from 2007 to 2013.
 - **Purpose:** To develop models that can accurately predict the financial health and potential bankruptcy of companies based on historical data.
 
-### Data Setup
+## Data Setup
 
 1. Drop Missing Values
 2. Split into Test and Train sets
 3. Target Variable: Bankruptcy (Binomial)
 4. Feature Variables: A1-A64 (Numerical)
 
-### Methodology
+## Methodology
 
 #### Logistic Regression
 - **Technique:** Subset Selection Cross-validation
@@ -58,7 +58,7 @@ This project employs machine learning techniques to predict whether a company wi
 - Given the serious imbalance reflected in these scores, it might be necessary to revisit the model's approach. Techniques like balancing the dataset, changing the model's decision threshold, or using different algorithms more suited to imbalanced data might be required to improve these critical metrics.
 
 #### Gradient Boosting
-- **Technique:** Features Selection Using Decision Trees
+- **Technique:** Gradient Boosting Classification
 
 ![Feature Importance](https://github.com/KenChen-GZ/QTM347_final_project/assets/123331887/4ff8a288-6fa3-49ae-ae08-50f1f2cca069)<br>
 
@@ -83,14 +83,14 @@ This is the gross margin ratio, showing the proportion of money left from revenu
 - **Performance Metrics:**
   - MSE, F1 Score ![MSE and F1 Score](https://github.com/KenChen-GZ/QTM347_final_project/assets/123331887/4d11f261-b042-4640-be01-e0d018613ff2)
 
-### Discussion
+## Discussion
 
 1. **Variable Importance:** The predictors selected by the two models do not overlap, raising questions about which variables are most critical in predicting bankruptcy.
 2. **Recall Rate:** Although model accuracy is high, the recall rate is low, indicating failure in identifying the majority of positive cases (bankruptcy).
 3. **Correlation Between Variables:** Potential correlations may exist between variables.
 4. **Multicollinearity:** All 64 features are transformations of basic indexes like gross profit, total liability, and book value. Treating them as individual predictors may lead to severe multicollinearity issues, suggesting a need for alternative methods or calculations.
 
-### Future Improvement
+## Future Improvement
 ![Imbalance Dataset](Imbalance.png)<br>
 *Figure 1: Bar graph showing the distribution of bankruptcy vs non-bankruptcy in the dataset.*<br>
 

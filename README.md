@@ -4,7 +4,7 @@ This project employs machine learning techniques to predict whether a company wi
 
 ## Introduction
 
-**Background:**  A huge concern in financial activity is wether a company would bankrupt or not. For instance, a bank would not want to provide loan a comapany that is likely to go bankrupt, bacause of the default risk of loan. For nearly a century, economists have been engaged in developing methods to predict corporate bankruptcies, underscoring its critical importance for stakeholders. This research aids investors, creditors, and regulatory bodies in making informed decisions and managing risk effectively.
+**Background:**  A huge concern in financial activity is whether a company would bankrupt or not. For instance, a bank would not want to provide loan a comapany that is likely to go bankrupt, bacause of the default risk of loan. For nearly a century, economists have been engaged in developing methods to predict corporate bankruptcies, underscoring its critical importance for stakeholders. This research aids investors, creditors, and regulatory bodies in making informed decisions and managing risk effectively.
 
 **Objective:** The primary goal of this project is to develop a robust predictive model that leverages various economic indicators to assess and forecast the financial health of companies. This model aims to enable early identification of potential bankruptcy, helping to mitigate financial losses and improve financial stability.
 
@@ -85,8 +85,8 @@ This is the gross margin ratio, showing the proportion of money left from revenu
 
 ## Discussion
 
-1. **Variable Importance:** The predictors selected by the two models do not overlap, raising questions about which variables are most critical in predicting bankruptcy.
-2. **Recall Rate:** Although model accuracy is high, the recall rate is low, indicating failure in identifying the majority of positive cases (bankruptcy).
+1. **Variable Importance:** The predictors selected by the two models do not overlap, raising questions about which variables are most critical in predicting bankruptcy. The difference in feature importances between logistic regression and gradient boosting can be attributed to the fundamentally different ways these models handle data and make decisions: Logistic Regression model assumes a linear relationship between the log odds of the outcome and each predictor. Gradient boosting builds an ensemble of decision trees, where each tree is built to correct the errors of the previous ones. It doesn't assume a linear relationship. Instead, it can capture complex nonlinear interactions between features. Besides, if the relationship between features and the target is non-linear, gradient boosting might prioritize different features compared to logistic regression.
+2. **Recall Rate:** Although model accuracy is high, the recall rate is low, indicating failure in identifying the majority of positive cases (bankruptcy). The reason of high accuracy but low recall rate are the class imbalance and Model Bias Towards Majority Class which means both logistic regression and gradient boosting might develop a bias towards the majority class, especially if not tuned to handle imbalance. This means they fail to identify the rarer but often more important cases.
 3. **Correlation Between Variables:** Potential correlations may exist between variables.
 4. **Multicollinearity:** All 64 features are transformations of basic indexes like gross profit, total liability, and book value. Treating them as individual predictors may lead to severe multicollinearity issues, suggesting a need for alternative methods or calculations.
 

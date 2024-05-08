@@ -44,7 +44,23 @@ This project employs machine learning techniques to predict whether a company wi
 #### Gradient Boosting
 - **Technique:** Features Selection Using Decision Trees
 
-![Feature Importance](https://github.com/KenChen-GZ/QTM347_final_project/assets/123331887/4ff8a288-6fa3-49ae-ae08-50f1f2cca069)
+![Feature Importance](https://github.com/KenChen-GZ/QTM347_final_project/assets/123331887/4ff8a288-6fa3-49ae-ae08-50f1f2cca069)<br>
+
+The selected features provided insight into the liquidity, profitability, efficiency, and leverage of a company. Those are often time indicator to bankruptcy of a company.<br>
+1. A24: Gross Profit (in 3 years) / Total Assets<br>
+This ratio measures a company's profitability relative to its total assets, showing how effectively a company uses its assets to generate gross profit. A declining trend over three years might indicate decreasing efficiency or increasing risk of financial distress.<br>
+2. A46: (Current Assets - Inventory) / Short-Term Liabilities<br>
+Also known as the "quick ratio," it measures a company's ability to meet its short-term obligations with its most liquid assets. This is a critical indicator of liquidity without relying on inventory, which is less liquid.<br>
+3. A58: Total Costs / Total Sales<br>
+This ratio evaluates how much of the sales revenue is consumed by the total costs, providing insights into the cost structure and efficiency of the company. Higher values suggest lower profitability and possibly financial troubles.<br>
+4. A5: [(Cash + Short-Term Securities + Receivables - Short-Term Liabilities) / (Operating Expenses - Depreciation)] * 365<br>
+This complex ratio assesses the liquidity management of a company, focusing on how long the company's liquid assets, after adjusting for immediate liabilities, can cover its day-to-day operations (excluding depreciation, a non-cash expense).<br>
+5. A34: Operating Expenses / Total Liabilities<br>
+This ratio indicates how much of the company's liabilities are covered by its operating expenses. A higher ratio can signal that the company is using a significant portion of its revenue to cover operational costs, which may not be sustainable.<br>
+6. A39: Profit on Sales / Sales<br>
+Known as the "profit margin," this ratio measures the percentage of profit generated from sales. It is a fundamental indicator of a company’s profitability. Consistently low or declining profit margins can be a precursor to financial troubles.<br>
+7. A56: (Sales - Cost of Products Sold) / Sales<br>
+This is the gross margin ratio, showing the proportion of money left from revenues after accounting for the cost of goods sold (COGS). It indicates the efficiency of production or service delivery and the pricing strategy.<br>
 
 ![Decision Tree](https://github.com/KenChen-GZ/QTM347_final_project/assets/123331887/543c1a40-dbe9-4f95-aa25-183b562df0e4)
 

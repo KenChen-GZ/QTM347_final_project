@@ -57,8 +57,8 @@
 4. **Multicollinearity:** All 64 features are transformations of basic indexes like gross profit, total liability, and book value. Treating them as individual predictors may lead to severe multicollinearity issues, suggesting a need for alternative methods or calculations.
 
 ### Future Improvement
-![Imbalance Dataset](Imbalance.png)
-*Figure 1: Bar graph showing the distribution of bankruptcy vs non-bankruptcy in the dataset.*
+![Imbalance Dataset](Imbalance.png)<br>
+*Figure 1: Bar graph showing the distribution of bankruptcy vs non-bankruptcy in the dataset.*<br>
 
 Because of imbalance dataset, we can see that our models often time falls into type II error. One potential way to improve is implementing the resamping technique.
 #### Resampling Techniques for Handling Imbalanced Datasets

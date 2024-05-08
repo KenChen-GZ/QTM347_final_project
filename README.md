@@ -63,15 +63,15 @@
 Because of imbalance dataset, we can see that our models often time falls into type II error. One potential way to improve is implementing the resamping technique.
 #### Resampling Techniques for Handling Imbalanced Datasets
 ###### 1. **Undersampling the Majority Class**
-Undersampling involves reducing the size of the majority class to balance the dataset. This method is straightforward and can help improve the run-time of training models since it reduces the dataset size. However, it has some significant drawbacks:
-**Pros and Cons**
--*Loss of Information:* By randomly removing instances from the majority class, potentially valuable information is discarded, which could be important for building a robust model.
--*Bias:* If the majority class instances that are removed are not representative of the class, this can introduce bias into the model.
+Undersampling involves reducing the size of the majority class to balance the dataset. This method is straightforward and can help improve the run-time of training models since it reduces the dataset size. However, it has some significant drawbacks:<br>
+**Pros and Cons**<br>
+-*Loss of Information:* By randomly removing instances from the majority class, potentially valuable information is discarded, which could be important for building a robust model.<br>
+-*Bias:* If the majority class instances that are removed are not representative of the class, this can introduce bias into the model.<br>
 
-###### 2. **Oversampling the Minority Class**
-Oversampling involves increasing the size of the minority class by duplicating existing instances or generating synthetic instances. This approach is beneficial because no information from the majority class is lost, but it can lead to other issues:
-**Pros and Cons**
--*Overfitting:* By replicating the minority class instances, the model might overfit these repeated or closely similar examples, performing well on training data but poorly on unseen data.
+###### 2. **Oversampling the Minority Class**<br>
+Oversampling involves increasing the size of the minority class by duplicating existing instances or generating synthetic instances. This approach is beneficial because no information from the majority class is lost, but it can lead to other issues:<br>
+**Pros and Cons**<br>
+-*Overfitting:* By replicating the minority class instances, the model might overfit these repeated or closely similar examples, performing well on training data but poorly on unseen data.<br>
 -*Increased Training Time:* Increasing the number of samples can lead to longer training times.
 
 

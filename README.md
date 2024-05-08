@@ -1,4 +1,6 @@
 ## Polish Company Bankruptcy Prediction
+### Abstract
+This project employs machine learning techniques to predict whether a company will bankrupt or not based on a set of financial indicators. By analyzing the Polish Companies Bankruptcy dataset from the UCI Machine Learning Repository, our goal is to develop a model that can accruate predict the bankruptcy of a company in making informed decisions.
 
 ### Introduction
 

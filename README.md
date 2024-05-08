@@ -40,7 +40,7 @@ This project employs machine learning techniques to predict whether a company wi
 
 - **Performance Metrics:**
   - ![F1 Score](https://github.com/KenChen-GZ/QTM347_final_project/assets/123331887/d1d2fd5a-3888-4d6b-afec-0c6a9f1127f8)<br>
-  1. **Accuracy (95.74%)**
+1. **Accuracy (95.74%)**
    - This metric tells us that the model correctly predicts the outcome (whether a company will go bankrupt or not) 95.74% of the time. This might seem like an excellent result at first glance.<br>
 
 2. **Precision (9.09%)**

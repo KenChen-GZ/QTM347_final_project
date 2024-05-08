@@ -39,7 +39,23 @@ This project employs machine learning techniques to predict whether a company wi
 ![Precision-Recall Curve](https://github.com/KenChen-GZ/QTM347_final_project/assets/123331887/2c922989-d82b-45e0-8fc4-b08f96d863bb)
 
 - **Performance Metrics:**
-  - F1 Score ![F1 Score](https://github.com/KenChen-GZ/QTM347_final_project/assets/123331887/d1d2fd5a-3888-4d6b-afec-0c6a9f1127f8)
+  - ![F1 Score](https://github.com/KenChen-GZ/QTM347_final_project/assets/123331887/d1d2fd5a-3888-4d6b-afec-0c6a9f1127f8)<br>
+  1. **Accuracy (95.74%)**
+   - This metric tells us that the model correctly predicts the outcome (whether a company will go bankrupt or not) 95.74% of the time. This might seem like an excellent result at first glance.<br>
+
+2. **Precision (9.09%)**
+   - Precision measures the accuracy of positive predictions. Here, it tells us that only about 9.09% of the cases that the model predicted as bankruptcy actually ended up being bankrupt. This is quite low, indicating that while the model frequently predicts bankruptcy, those predictions are often incorrect.<br>
+
+3. **Recall (2.94%)**
+   - Recall, or sensitivity, measures the ability of a model to find all the relevant cases (true positives). A recall of 2.94% is extremely low, indicating that the model fails to identify the vast majority of actual bankruptcies.<br>
+
+4. **F1 Score (4.44%)**
+   - The F1 Score is the harmonic mean of precision and recall. An F1 Score of 4.44% is very low, which in this context suggests a model that is both imprecise and not very effective at identifying most of the true positives (i.e., actual bankruptcy cases).<br>
+
+##### Interpretation:
+
+- Despite the high accuracy, the very low values for precision, recall, and F1 score suggest that the model is not effective in predicting bankruptcy. This discrepancy is often seen in datasets where one class (e.g., 'not bankrupt') significantly outnumbers the other (e.g., 'bankrupt'). The model might be simply predicting the majority class most of the time, achieving high accuracy but being practically useless for identifying bankruptcy cases.<br>
+- Given the serious imbalance reflected in these scores, it might be necessary to revisit the model's approach. Techniques like balancing the dataset, changing the model's decision threshold, or using different algorithms more suited to imbalanced data might be required to improve these critical metrics.
 
 #### Gradient Boosting
 - **Technique:** Features Selection Using Decision Trees

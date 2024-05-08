@@ -1,0 +1,61 @@
+## Polish Company Bankruptcy Prediction
+
+### Introduction
+
+**Background:** Research on predicting bankruptcy has been crucial in economics for nearly a century.
+
+**Objective:** To develop a model to predict a company’s financial health using various economic indicators.
+
+**Historical Approaches:** Earlier focus was on statistical hypothesis testing and modeling, with recent shifts towards artificial intelligence.
+
+**Project Focus:** This project applies contemporary machine learning (ML) methods to enhance prediction accuracy.
+
+### Source
+
+**Dataset:** Polish Companies Bankruptcy
+- **Source:** UCI Machine Learning Repository
+- **Description:** This dataset focuses on the prediction of bankruptcy for Polish companies.
+- **Time Frame:** Bankrupt companies from 2000 to 2012, operating companies from 2007 to 2013.
+- **Purpose:** To develop models that can accurately predict the financial health and potential bankruptcy of companies based on historical data.
+
+### Data Setup
+
+1. Drop Missing Values
+2. Split into Test and Train sets
+3. Target Variable: Bankruptcy (Binomial)
+4. Feature Variables: A1-A64 (Numerical)
+
+### Methodology
+
+#### Logistic Regression
+- **Technique:** Subset Selection Cross-validation
+
+![Logistic Regression Model Performance](https://github.com/KenChen-GZ/QTM347_final_project/assets/123331887/87b439da-59d6-4916-9de7-884344bdb267)
+
+![ROC Curve](https://github.com/KenChen-GZ/QTM347_final_project/assets/123331887/05a4c2bc-6b95-4c53-9e04-830061a2b98f)
+
+![Precision-Recall Curve](https://github.com/KenChen-GZ/QTM347_final_project/assets/123331887/2c922989-d82b-45e0-8fc4-b08f96d863bb)
+
+- **Performance Metrics:**
+  - F1 Score ![F1 Score](https://github.com/KenChen-GZ/QTM347_final_project/assets/123331887/d1d2fd5a-3888-4d6b-afec-0c6a9f1127f8)
+
+#### Gradient Boosting
+- **Technique:** Features Selection Using Decision Trees
+
+![Feature Importance](https://github.com/KenChen-GZ/QTM347_final_project/assets/123331887/4ff8a288-6fa3-49ae-ae08-50f1f2cca069)
+
+![Decision Tree](https://github.com/KenChen-GZ/QTM347_final_project/assets/123331887/543c1a40-dbe9-4f95-aa25-183b562df0e4)
+
+- **Performance Metrics:**
+  - MSE, F1 Score ![MSE and F1 Score](https://github.com/KenChen-GZ/QTM347_final_project/assets/123331887/4d11f261-b042-4640-be01-e0d018613ff2)
+
+### Discussion
+
+1. **Variable Importance:** The predictors selected by the two models do not overlap, raising questions about which variables are most critical in predicting bankruptcy.
+2. **Recall Rate:** Although model accuracy is high, the recall rate is low, indicating failure in identifying the majority of positive cases (bankruptcy).
+3. **Correlation Between Variables:** Potential correlations may exist between variables.
+4. **Multicollinearity:** All 64 features are transformations of basic indexes like gross profit, total liability, and book value. Treating them as individual predictors may lead to severe multicollinearity issues, suggesting a need for alternative methods or calculations.
+
+---
+
+This format improves readability and organization, making it easier for readers to understand the structure and results of your project.
